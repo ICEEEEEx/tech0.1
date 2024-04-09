@@ -65,32 +65,19 @@
                     ?>
                 </div>
             </div>
+            <!-- carousel vietoj situ ^^^^^^^^^^ -->
             
+
             <div class="postsz-container" id="section2">
                 <h1>Posts</h1>
-                <div class="posts-container">
-                <?php
-                    // Load posts from JSON file
-                    $posts = json_decode(file_get_contents('Jsons/posts.json'), true);
-                    
-                    // Display each post
-                    foreach ($posts as $post) {
-                        echo '<div class="card">';
-                        echo '<div class="card-header">';
-                        // Assuming you have an avatar for each user
-                        // echo '<img src="' . $post['avatar'] . '" alt="Avatar" class="avatar">';
-                        echo '<img src="logo.png" alt="Avatar" class="avatar">';
-                        echo '<div class="user-info">';
-                        echo '<h3>' . $post['username'] . '</h3>';
-                        echo '<p class="timestamp">' . $post['timestamp'] . '</p>';
-                        echo '</div>';
-                        echo '</div>';
-                        echo '<div class="message-content">';
-                        echo '<p>' . $post['message'] . '</p>';
-                        echo '</div>';
-                        echo '</div>';
-                    }
-                ?>
+
+                <?php $posts = json_decode(file_get_contents('Jsons/posts.json'), true); ?>
+                <div class="posts-container" id="postContainer">
+                    <!-- Post'ai dinamiskai prisideda cia (js) -->
+                </div>
+                <div class="">
+                    <button class="posts-button" id="moreBtn">More</button>
+                    <button class="posts-button" id="hideBtn" style="display: none;">Hide</button>
                 </div>
             </div>
 
@@ -98,7 +85,7 @@
                 <h1>Hobby Cards</h1>
                 <div class="card-hobbies-container">
                     <?php
-                    // Load hobby cards from JSON file
+                    // hobby korteles is JSON file'o
                     $hobbies = json_decode(file_get_contents('Jsons/hobbies.json'), true);
                     
                     // Display each hobby card
@@ -120,31 +107,27 @@
 
 
 
-
-                    </div>
+        </div>
+        <footer>
+            <div class="footer-content">
+                <div class="footer-date-div">
+                    <p>&copy; <?php echo date("Y"); ?> DT.</p>
                 </div>
-
+                <div class="footer-links-div"> 
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
             </div>
+        </footer>
 
-
-
+    
     </div>
 
 
-
-
-    <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-
-                const target = document.querySelector(this.getAttribute('href'));
-                target.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'center'
-                });
-            });
-        });
-    </script>
+    <script src="script.js"></script>
+    <script src="script-posts.js"></script>
 </body>
 </html>
