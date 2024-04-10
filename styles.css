@@ -1,7 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* <uniquifier>: Use a unique and descriptive class name
+<weight>: Use a value from 400 to 900 */
+
+/* .playfair-display-<uniquifier> {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+ */
+ 
+
+
+
+
+
 /* Basic CSS for Navbar */
 *{
     margin: 0;
     padding: 0;  
+
+
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
 }
 body {
     width: 100%;
@@ -13,7 +37,8 @@ body {
     background-position: 0 0, 96px 96px;
     background-size: 192px 192px;
     background-color: #2f0629; */
-    background-color: rgb(232, 117, 26);
+    /* background-color: rgb(232, 117, 26); */
+    background-color: rgb(162, 178, 159);
 
 
     display: flex;
@@ -23,6 +48,7 @@ body {
 a{
     color: WHITE;
     text-decoration: none; 
+
 }
 
 #navbar {
@@ -30,7 +56,7 @@ a{
     top: 0; /* Stick to the top */
     left: 0;
     width: 100%; 
-    background-color: rgb(253, 164, 3);
+    background-color: rgb(125, 194, 113);
     
     color: #fff;
     padding: 20px;
@@ -40,16 +66,36 @@ a{
     align-items: center; /* Align items vertically */
 
     z-index: 9999999999;
+
+
+    /* text-shadow: 0px 0px 4px rgba(0,0,0,0.6); */
+
+
+    /* font-size: 20px; */
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
 }
 
 nav .brand {
-    font-weight: bold;
+
+
+
+    font-size: 22px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+
 }
 
 
 #page-name{
     /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
     align-self: center;
+
+
 }
 
 .nav-buttons {
@@ -133,11 +179,12 @@ nav .brand {
 
 .content-container{
     margin: 0 auto; /*Center */
-    margin-top: 40px;
-    margin-bottom: 40px;
-    padding-bottom: 20px;
-    width: 80%;
-    background-color: rgb(229, 194, 135);
+    /* margin-top: 40px; */
+    /* margin-bottom: 40px; */
+    /* padding-bottom: 20px; */
+    /* width: 80%; */
+    width: 100%;
+    /* background-color: rgb(229, 194, 135); */
 
     text-align: center;
 
@@ -155,9 +202,9 @@ nav .brand {
     height: 100vh; /* This will make the frontpage cover the entire viewport height */
     width: 100%;
 
-    border-bottom: 5px solid #000000;
-     /* box-shadow: 0px -151px 111px -131px rgba(0,0,0,0.96) inset; */
-    box-shadow: 0px 7px 86px 0px rgba(0,0,0,0.88);
+    /* border-bottom: 5px solid #000000;
+     box-shadow: 0px -151px 111px -131px rgba(0,0,0,0.96) inset;
+    box-shadow: 0px 7px 86px 0px rgba(0,0,0,0.88); */
 }
 
 .cover-photo {
@@ -192,10 +239,22 @@ nav .brand {
     padding: 20px;
     color: white;
     padding-left: 10%;
+
+    font-size: 18px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 50;
+    font-style: normal;
 }
 
 .box1 h1 {
     margin-bottom: 10px; 
+
+    font-size: 64px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
     
 }
 
@@ -244,10 +303,20 @@ nav .brand {
             width: 100%;
             display: flex;
             flex-direction: column;
+            background-color: rgb(162, 178, 159);
+            padding-bottom: 40px;
         }
         .hobbiez-container h1{
             color: white;
             margin: 20px;
+            text-shadow: 0px 0px 4px rgba(0,0,0,0.6);
+
+
+        font-size: 36px;
+        font-family: "Playfair Display", serif;
+        font-optical-sizing: auto;
+        font-weight: 450;
+        font-style: normal;
         }
 
         
@@ -260,10 +329,10 @@ nav .brand {
             margin: 0 auto;
             /* margin-top: 20px; */
 
-            border-style: solid;
+            /* border-style: solid;
             border-color: white;
             border-width: 1px;
-            border-radius: 5px;
+            border-radius: 5px; */
         }
         .card-container{
             display: flex;
@@ -275,11 +344,13 @@ nav .brand {
             margin: 0 auto;
             /* margin-top: 40px; */
 
+            
 
-            border-style: solid;
+
+            /* border-style: solid;
             border-color: white;
             border-width: 1px;
-            border-radius: 5px;
+            border-radius: 5px; */
         }
 
         .hobby-card {
@@ -365,10 +436,26 @@ nav .brand {
 
     display: flex;
     flex-direction: column;
+
+    background-color: rgb(206, 230, 199);
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    
 }
 .skills-container h1{
     color: white;
     margin: 20px;
+
+    text-shadow: 0px 0px 4px rgba(0,0,0,0.6);
+
+
+    font-size: 36px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
+
 }
 
 .skill-card {
@@ -463,21 +550,35 @@ nav .brand {
     flex-direction: column;
     align-items: center;
     width: 100%;
+
+    background-color: rgb(189, 210, 182);
+    padding-bottom: 20px;
     
 }
 
 .postsz-container h1{
-    color: white;
+    color: rgb(255, 255, 255);
     margin: 20px;
+    text-shadow: 0px 0px 4px rgba(0,0,0,0.6);
+
+
+    font-size: 36px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
 }
 
 
 .posts-container{
 
-    border-style: solid;
+    /* border-style: solid;
     border-color: rgb(255, 255, 255);
     border-width: 1px;
-    border-radius: 5px;
+    border-radius: 5px; */
+
+
+
     /* height: 400px; veliau istrinti !!!! */
     width: 90%;
     padding: 10px;
@@ -582,7 +683,9 @@ nav .brand {
 
         /* Footer Styles */
 footer {
-    background-color: rgb(137, 129, 33);
+    /* background-color: rgb(137, 129, 33); */
+    background-color: rgb(121, 135, 119);
+ 
     color: #fff;
     /* padding: 20px; */
     /* display: flex;

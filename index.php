@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+    </style>
+ -->
+
+
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
@@ -12,13 +19,16 @@
         <div class="brand" id="page-name">PAGRINDINIS</div>
 
             <div class="nav-buttons">
-                <a href="login.php"><button class="admin-button">Admin</button></a>
+                <!-- <a href="login.php"><button class="admin-button">Admin</button></a> -->
                     <div class="dropdown">
                         <button class="dropdown-button">Navigate</button>
                         <div class="dropdown-content">
                             <a href="#section1">Igudziai</a>
                             <a href="#section2">Post'ai</a>
                             <a href="#section3">Pomegiai</a>
+                            <br>
+                            <!-- <a href="login.php"><button class="admin-button">Admin</button></a> -->
+                            <a href="login.php" style="color: green;">Admin</a>
                         </div>
             </div>
         </div>

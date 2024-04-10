@@ -15,7 +15,8 @@ if (isset($_POST['logout'])) {
     // Destroy the session
     session_destroy();
     // Redirect to the login page
-    header("Location: admin_login.php");
+    // header("Location: admin_login.php");
+    header("Location: index.php");
     exit;
 }
 
